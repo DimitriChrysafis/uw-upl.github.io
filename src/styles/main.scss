@@ -37,8 +37,8 @@ body {
 @font-face {
   font-family: "Alegreya Sans";
   src:
-    url("AlegreyaSans-Light.woff2") format("woff2"),
-    url("AlegreyaSans-Light.woff") format("woff");
+    url("/fonts/AlegreyaSans-Light.woff2") format("woff2"),
+    url("/fonts/AlegreyaSans-Light.woff") format("woff");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -258,40 +258,6 @@ table.striped.small-only tbody:last-child tr:last-child td {
   }
 }
 
-.stacktable {
-  width: 100%;
-}
-.st-head-row {
-  padding-top: 1em;
-}
-.st-head-row.st-head-row-main {
-  font-size: 1.5em;
-  padding-top: 0;
-}
-.st-key {
-  width: 49%;
-  text-align: right;
-  padding-right: 1%;
-}
-.st-val {
-  width: 49%;
-  padding-left: 1%;
-  text-align: center;
-}
-
-.lab-table-container {
-  width: 100%;
-  max-width: 300px;
-  margin: 0 auto;
-}
-table.lab-status {
-  display: none;
-}
-
-table.lab-status .lab-table-machine-container td:first-child {
-  text-align: left;
-}
-
 .content {
   flex: 1 0 auto;
 }
@@ -416,6 +382,46 @@ li {
 
 .event {
   margin-bottom: 1em;
+}
+
+// blog post prose styles
+article {
+  p {
+    margin-bottom: 10px;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+    margin: 5px 0;
+  }
+
+  pre {
+    padding: 0.75em;
+    border-radius: 4px;
+    overflow-x: auto;
+    margin: 10px 0;
+    font-size: 0.85em;
+  }
+
+  :not(pre) > code {
+    background-color: #f0f0f0;
+    padding: 0.1em 0.3em;
+    border-radius: 3px;
+    font-size: 0.9em;
+  }
+
+  ol,
+  ul {
+    padding-left: 1.5em;
+  }
+
+  blockquote {
+    border-left: 3px solid $upl-red;
+    margin: 10px 0;
+    padding: 0.25em 0.75em;
+    color: #555;
+  }
 }
 
 // indent content under header in q&a section

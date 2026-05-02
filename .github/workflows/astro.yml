@@ -9,6 +9,10 @@ on:
   push:
     branches: ["master"]
 
+  # Rebuild daily to pick up new blog posts from UW-UPL/harvest
+  schedule:
+    - cron: "30 0 * * *"
+
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 

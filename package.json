@@ -12,8 +12,7 @@
     "@astrojs/check": "^0.9.4",
     "@astrojs/svelte": "^7.2.0",
     "astro": "^5.14.5",
-    "moment-timezone": "^0.5.48",
-    "sass": "^1.86.3",
+"sass": "^1.86.3",
     "svelte": "^5.28.1",
     "typescript": "^5.8.3"
   },
